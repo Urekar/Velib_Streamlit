@@ -21,6 +21,12 @@ st.set_page_config(page_title="Velib – Top vélos", layout="wide")
 st.title("Velib – Top vélos")
 
 # ----------------------------------------------------
+# Sidebar
+# ----------------------------------------------------
+st.sidebar.title("🚲 Vélibstat")
+st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")
+
+# ----------------------------------------------------
 # Horizon de période et pills
 # ----------------------------------------------------
 horizon_map = {
@@ -139,8 +145,3 @@ map_data = pd.DataFrame([
 ])
 st.map(map_data)
 
-# ----------------------------------------------------
-# Sidebar
-# ----------------------------------------------------
-st.sidebar.title("🚲 Vélibstat")
-st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")

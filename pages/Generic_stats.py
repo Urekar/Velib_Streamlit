@@ -31,6 +31,12 @@ client = bigquery.Client(
     project=credentials.project_id
 )
 
+# ----------------------------------------------------
+# Sidebar
+# ----------------------------------------------------
+st.sidebar.title("🚲 Vélibstat")
+st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")
+
 # ====================================================
 # LOAD DATA – 30 DERNIERS JOURS
 # ====================================================
@@ -277,9 +283,5 @@ station_pairs = (
 
 st.dataframe(station_pairs.head(10), use_container_width=True)
 
-# ----------------------------------------------------
-# Sidebar
-# ----------------------------------------------------
-st.sidebar.title("🚲 Vélibstat")
-st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")
+
 

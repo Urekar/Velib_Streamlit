@@ -23,6 +23,11 @@ Les chiffres ci-dessous sont mis à jour automatiquement, et la carte vous montr
 Les données proviennent de l'[API ouverte Vélib’](https://www.velib-metropole.fr/donnees-open-data-gbfs-du-service-velib-metropole).
 """)
 
+# ----------------------------------------------------
+# Sidebar
+# ----------------------------------------------------
+st.sidebar.title("🚲 Vélibstat")
+st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")
 
 # ----------------------------------------------------
 # Récupération des données station_status.json
@@ -98,11 +103,7 @@ with cols_table[0]:
 with cols_table[1]:
     st.dataframe(df_info, use_container_width=True)
 
-# ----------------------------------------------------
-# Sidebar
-# ----------------------------------------------------
-st.sidebar.title("🚲 Vélibstat")
-st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")
+
 
 
 

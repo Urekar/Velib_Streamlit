@@ -13,6 +13,12 @@ st.set_page_config(page_title="Velib Stats - Station", layout="wide")
 st.title("Velib Stats - Station")
 
 # ----------------------------------------------------
+# Sidebar
+# ----------------------------------------------------
+st.sidebar.title("🚲 Vélibstat")
+st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")
+
+# ----------------------------------------------------
 # Charger les données Vélib temps réel (API)
 # ----------------------------------------------------
 URL_status = "https://velib-metropole-opendata.smovengo.cloud/opendata/Velib_Metropole/station_status.json"
@@ -161,8 +167,3 @@ else:
     st.info("Sélectionnez une station pour afficher ces graphiques.")
 
 
-# ----------------------------------------------------
-# Sidebar
-# ----------------------------------------------------
-st.sidebar.title("🚲 Vélibstat")
-st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")
