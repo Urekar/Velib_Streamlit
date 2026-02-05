@@ -101,14 +101,8 @@ with cols_table[1]:
 # ----------------------------------------------------
 # Sidebar
 # ----------------------------------------------------
-st.sidebar.title("❄️ Snowflake Cheatsheet 📄")
-st.sidebar.caption("Créé par un [Amateur Pas Doué](https://www.linkedin.com/in/siavash-yasini/)")
-
-with st.sidebar.expander("Voir mes autres applications Streamlit"):
-    st.caption("streamliTissues: [App](https://tissues.streamlit.app/) 🎈")
-    st.caption("Sophisticated Palette: [App](https://sophisticated-palette.streamlit.app/) 🎈,  [Blog Post](https://blog.streamlit.io/create-a-color-palette-from-any-image/) 📝")
-    st.caption("Wordler: [App](https://wordler.streamlit.app/) 🎈,  [Blog Post](https://blog.streamlit.io/the-ultimate-wordle-cheat-sheet/) 📝")
-    st.caption("Koffee of the World: [App](https://koffee.streamlit.app/) 🎈")
+st.sidebar.title("🚲 Vélibstat")
+st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")
 
 
 

@@ -159,3 +159,10 @@ if selected_station != "Toutes les stations":
         st.warning("Aucune donnée disponible pour cette période ou station.")
 else:
     st.info("Sélectionnez une station pour afficher ces graphiques.")
+
+
+# ----------------------------------------------------
+# Sidebar
+# ----------------------------------------------------
+st.sidebar.title("🚲 Vélibstat")
+st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")

@@ -193,3 +193,9 @@ for tab, dep_code, dep_label in zip(tabs, dep_values, dep_labels):
                 st.metric("🔋 E-Bikes", stations_filtrees["ebike_available"].sum())
         else:
             st.warning(f"Aucune donnée pour {selected_city if selected_city != 'Toutes les villes' else dep_label}")
+
+# ----------------------------------------------------
+# Sidebar
+# ----------------------------------------------------
+st.sidebar.title("🚲 Vélibstat")
+st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")

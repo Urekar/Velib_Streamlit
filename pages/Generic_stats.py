@@ -22,7 +22,6 @@ st.caption(
 # ====================================================
 # BIGQUERY CLIENT
 # ====================================================
-key_path = "/home/nicolas/Streamlit-app/gcp_sa_key/streamlit-to-gcp-sa.json"
 
 credentials = service_account.Credentials.from_service_account_info(
     st.secrets["gcp_service_account"]
@@ -278,5 +277,9 @@ station_pairs = (
 
 st.dataframe(station_pairs.head(10), use_container_width=True)
 
-
+# ----------------------------------------------------
+# Sidebar
+# ----------------------------------------------------
+st.sidebar.title("🚲 Vélibstat")
+st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")
 

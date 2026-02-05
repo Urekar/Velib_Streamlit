@@ -139,3 +139,8 @@ map_data = pd.DataFrame([
 ])
 st.map(map_data)
 
+# ----------------------------------------------------
+# Sidebar
+# ----------------------------------------------------
+st.sidebar.title("🚲 Vélibstat")
+st.sidebar.caption("Créé par [Nicolas](https://www.linkedin.com/in/nicolas-bouttier/)")
