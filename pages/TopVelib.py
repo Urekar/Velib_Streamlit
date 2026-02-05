@@ -6,8 +6,9 @@ from google.oauth2 import service_account
 # ----------------------------------------------------
 # BigQuery client
 # ----------------------------------------------------
-key_path = "/home/nicolas/Streamlit-app/gcp_sa_key/streamlit-to-gcp-sa.json"
-credentials = service_account.Credentials.from_service_account_file(key_path)
+credentials = service_account.Credentials.from_service_account_info(
+    st.secrets["gcp_service_account"]
+)
 client = bigquery.Client(
     credentials=credentials,
     project=credentials.project_id
